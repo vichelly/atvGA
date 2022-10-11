@@ -1,0 +1,20 @@
+print("Projeção Ortogonal do vetor u sobre o vetor v:")
+print("Coordenadas do vetor u:")
+ux=float(input("Digite a 1a. coordenada: "))
+uy=float(input("Digite a 2a. coordenada: "))
+uz=float(input("Digite a 3a. coordenada: "))
+print("Coordenadas do vetor v:")
+vx=float(input("Digite a 1a. coordenada: "))
+vy=float(input("Digite a 2a. coordenada: "))
+vz=float(input("Digite a 3a. coordenada: "))
+
+multi_vet_u_v=((ux*vx)+(uy*vy)+(uz*vz))
+mult_vet_v_quad=((vx*vx)+(vy*vy)+(vz*vz))
+final=(multi_vet_u_v/mult_vet_v_quad)
+
+proj_vx=(final*vx)
+proj_vy=(final*vy)
+proj_vz=(final*vz)
+
+print("Projeção Ortogonal: {:.2f}/{:.2f}({:.2f}, {:.2f}, {:.2f})".format(multi_vet_u_v,mult_vet_v_quad,vx,vy,vz))
+print("Projeção Ortogonal: ({:.2f}, {:.2f}, {:.2f})".format(proj_vx,proj_vy,proj_vz))

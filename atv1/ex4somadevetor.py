@@ -1,0 +1,8 @@
+print("Soma de Vetores: ")
+a = float(input("Digite a 1a. coordenada: "))
+b = float(input("Digite a 2a. coordenada: "))
+c = float(input("Digite a 3a. coordenada: "))
+d = float(input("Digite a 1a. coordenada: "))
+e = float(input("Digite a 2a. coordenada: "))
+f = float(input("Digite a 3a. coordenada: "))
+print("Vetor Soma: ({:.2f}, {:.2f}, {:.2f})".format((a+d),(b+e),(c+f)))

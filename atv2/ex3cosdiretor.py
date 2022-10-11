@@ -1,0 +1,8 @@
+print("Cosseno Diretor:")
+print("Coordenadas do vetor u:")
+a = float(input("Digite a 1a. coordenada: "))
+b = float(input("Digite a 2a. coordenada: "))
+c = float(input("Digite a 3a. coordenada: "))
+div = (((a*a)+(b*b)+(c*c))**(0.5))
+print("Cosseno Diretor: 1/{:.2f} ({:.2f}, {:.2f}, {:.2f})".format(div,a,b,c))
+print("Cosseno Diretor: ({:.2f}, {:.2f}, {:.2f})".format(a/div,b/div,c/div))

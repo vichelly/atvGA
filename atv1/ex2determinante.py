@@ -1,0 +1,22 @@
+print("DETERMINANTE: \n")
+ordem = int(input("Digite a ordem da matriz (até ordem 3): "))
+if ordem == 1:
+    a = float(input("Digite o elemento 1 1 da matriz: "))
+    print("Determinante:  {:.1f}".format(a))
+elif ordem == 2:
+    a = float(input("Digite o elemento 1 1 da matriz: "))
+    b = float(input("Digite o elemento 1 2 da matriz: "))
+    c = float(input("Digite o elemento 2 1 da matriz: "))
+    d = float(input("Digite o elemento 2 2 da matriz: "))
+    print("Determinante: {:.1f}".format((a*d)-(b*c)))
+elif ordem == 3:
+    a = float(input("Digite o elemento 1 1 da matriz: "))
+    b = float(input("Digite o elemento 1 2 da matriz: "))
+    c = float(input("Digite o elemento 1 3 da matriz: "))
+    d = float(input("Digite o elemento 2 1 da matriz: "))
+    e = float(input("Digite o elemento 2 2 da matriz: "))
+    f = float(input("Digite o elemento 2 3 da matriz: "))
+    g = float(input("Digite o elemento 3 1 da matriz: "))
+    h = float(input("Digite o elemento 3 2 da matriz: "))
+    i = float(input("Digite o elemento 3 3 da matriz: "))
+    print("Determinante: {:.1f}".format((a*e*i+ b*f*g+c*d*h)-(c*e*g+b*d*i+a*f*h)))
